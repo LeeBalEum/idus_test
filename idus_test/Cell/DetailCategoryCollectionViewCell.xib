@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DetailCategoryCollectionViewCell" reuseIdentifier="DetailCategoryCollectionViewCell" id="gTV-IL-0wX" customClass="DetailCategoryCollectionViewCell" customModule="idus_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="46"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOe-kC-Ozr">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#카테고리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOJ-38-nmr">
+                                <rect key="frame" x="18" y="12" width="114" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bOJ-38-nmr" secondAttribute="bottom" constant="12" id="JIK-T8-IDO"/>
+                            <constraint firstAttribute="trailing" secondItem="bOJ-38-nmr" secondAttribute="trailing" constant="18" id="QEv-3L-7xD"/>
+                            <constraint firstItem="bOJ-38-nmr" firstAttribute="top" secondItem="hOe-kC-Ozr" secondAttribute="top" constant="12" id="Ty8-Bt-n68"/>
+                            <constraint firstItem="bOJ-38-nmr" firstAttribute="leading" secondItem="hOe-kC-Ozr" secondAttribute="leading" constant="18" id="q9M-fl-ptU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hOe-kC-Ozr" secondAttribute="bottom" id="DNa-EV-bwW"/>
+                <constraint firstItem="hOe-kC-Ozr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="esN-Aw-ODy"/>
+                <constraint firstItem="hOe-kC-Ozr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="n2q-mQ-rNG"/>
+                <constraint firstAttribute="trailing" secondItem="hOe-kC-Ozr" secondAttribute="trailing" id="rNY-k4-XeC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="150" height="46"/>
+            <connections>
+                <outlet property="categoryLabel" destination="bOJ-38-nmr" id="Qnk-ES-3fe"/>
+                <outlet property="containerView" destination="hOe-kC-Ozr" id="6To-Wd-1bn"/>
+            </connections>
+            <point key="canvasLocation" x="172.46376811594203" y="99.107142857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>

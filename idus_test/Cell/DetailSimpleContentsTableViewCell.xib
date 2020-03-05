@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailSimpleContentsTableViewCell" id="KGk-i7-Jjw" customClass="DetailSimpleContentsTableViewCell" customModule="idus_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="크기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPP-6v-WJn">
+                        <rect key="frame" x="12" y="13" width="26" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDV-hB-5JA">
+                        <rect key="frame" x="277" y="13" width="16" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20037615740740741" green="0.60309606481481481" blue="0.6171875" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="WCC-I3-eVk">
+                        <rect key="frame" x="302" y="16" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="LUa-0g-2Il"/>
+                            <constraint firstAttribute="width" constant="12" id="OH7-nB-E74"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJ7-fE-ewX">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="SHU-x2-mZP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dJ7-fE-ewX" secondAttribute="trailing" id="08Q-Wj-pgk"/>
+                    <constraint firstAttribute="trailing" secondItem="dDV-hB-5JA" secondAttribute="trailing" constant="27" id="ZyW-CL-8CY"/>
+                    <constraint firstItem="CPP-6v-WJn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="bap-BQ-ozb"/>
+                    <constraint firstItem="dDV-hB-5JA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fxw-BH-fvG"/>
+                    <constraint firstItem="dJ7-fE-ewX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gyL-ao-y6o"/>
+                    <constraint firstItem="WCC-I3-eVk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="h1X-KR-6K2"/>
+                    <constraint firstAttribute="trailing" secondItem="WCC-I3-eVk" secondAttribute="trailing" constant="6" id="pNW-Os-1a4"/>
+                    <constraint firstItem="CPP-6v-WJn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vVn-xB-iyC"/>
+                    <constraint firstAttribute="bottom" secondItem="dJ7-fE-ewX" secondAttribute="bottom" id="wnM-AA-3oM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowImageView" destination="WCC-I3-eVk" id="53t-jo-4dZ"/>
+                <outlet property="contentsLabel" destination="dDV-hB-5JA" id="BnG-HE-CHV"/>
+                <outlet property="titleLabel" destination="CPP-6v-WJn" id="RyJ-kW-PqB"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="126.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down-arrow" width="512" height="512"/>
+    </resources>
+</document>
